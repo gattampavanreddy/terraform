@@ -1,3 +1,9 @@
+variable "environment" {
+    type = string
+    default = "dev"
+  
+}
+
 variable "ami_id" {
     type = string
     default     = "ami-0220d79f3f480ecf5"
@@ -20,7 +26,7 @@ variable "ec2_tags" {
 }
 
 variable "sg_name" {
-    default = "allow-all-terraform-default"
+    default = "allow-all-terraform"
     type = string
 }
 
@@ -46,7 +52,7 @@ variable "cidr_blocks" {
 variable "sg_tags" {
   type = map
   default = {
-    Name = "allow-all-terraform-default"
+    Name = "allow-all-terraform"
     project = "roboshop"
     Terraform = "true"
     Environment = "dev"
