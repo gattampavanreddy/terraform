@@ -4,20 +4,17 @@ variable "common_tags" {
         Terraform = "true"
         Environment = "dev"
     }
-  
 }
 
 variable "ec2_tags" {
     default = {
-        Name = "terraform"
+        Name = "functions-ec2"
         environment = "prod"
-
     }
 }
 
 variable "sg_tags" {
     default = {
-        Name = ""
-        
+        Name = "functions-sg"
     }
 }
