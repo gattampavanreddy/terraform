@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "s3" {
-    bucket = "roboshop-88s" # this is for S3 bucket
+    bucket = "roboshop-88s-pavan" # this is for S3 bucket
     key    = "roboshop.tfstate"
     region = "us-east-1"
     encrypt = true
